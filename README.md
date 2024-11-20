@@ -7,7 +7,7 @@ Cara clone/mengambil project dari GitHub:
 4. Php artisan migrate -> (membuat/memasukkan tabel)
 5. Php artisan db:seed —class=nama_class_seeder -> (input data awal) 
 
-php artisan serve --host 0.0.0.0 -> jalankan project
+php artisan serve --host 0.0.0.0 -> jalankan project <br>
 
-php artisan storage:link -> menghubungkan ke media penyimpanan
+php artisan storage:link -> menghubungkan ke media penyimpanan <br>
 chmod -R 775 storage -> memberikan akses media penyimpanan
