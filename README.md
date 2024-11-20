@@ -1,5 +1,4 @@
 <h1>20 November 2024</h1>
-Cara clone/mengambil project dari GitHub:
 
 Cara clone/mengambil project dari GitHub:
 1. git clone https://github.com/arieldcc/sipoma-app.git -> di GitHub (ambil project dari GitHub)
