@@ -1,0 +1,2 @@
+php artisan make:seeder AnggotaKeanggotaanSeeder
+php artisan db:seed --class=AnggotaKeanggotaanSeeder

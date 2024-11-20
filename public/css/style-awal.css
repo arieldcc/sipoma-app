@@ -1,0 +1,74 @@
+/* CSS tambahan untuk FAB (Floating Action Button) */
+.fab-btn {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+    font-size: 24px;
+    color: #fff;
+    background-color: #051321;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.3);
+    transition: background-color 0.3s;
+    z-index: 1000; /* Pastikan FAB di atas elemen lainnya */
+}
+.fab-btn:hover {
+    background-color: #5e7fa2;
+}
+
+/* Style untuk tombol aksi */
+.action-btn {
+    font-size: 12px;
+    padding: 5px 10px;
+    border-radius: 5px;
+    margin-right: 5px;
+    color: #fff;
+    display: inline-block;
+}
+/* Tombol dengan warna dan ikon */
+.btn-tutup {
+    background-color: #6c757d; /* Warna abu-abu */
+    color: #fff;
+}
+
+.btn-simpan {
+    background-color: #007bff; /* Warna biru */
+    color: #fff;
+}
+
+/* Tambahan styling untuk tombol yang ada */
+.btn-tampil {
+    background-color: #28a745; /* Hijau untuk tampil */
+    color: #fff;
+}
+
+.btn-edit {
+    background-color: #ffc107; /* Kuning untuk edit */
+    color: #212529;
+}
+
+.btn-hapus {
+    background-color: #dc3545; /* Merah untuk hapus */
+    color: #fff;
+}
+
+/* Ikon yang disematkan dalam tombol */
+.btn .fa {
+    margin-right: 5px; /* Spasi antara ikon dan teks */
+}
+
+
+.action-btn:hover {
+    opacity: 0.8;
+}
+
+.modal-backdrop {
+    z-index: 1040 !important;
+}
+.modal {
+    z-index: 1050 !important;
+}

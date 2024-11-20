@@ -1,0 +1,86 @@
+/* Wrapper styling */
+#wrapper {
+    display: flex;
+    flex-direction: row;
+}
+
+/* Sidebar styling */
+#sidebar-wrapper {
+    width: 220px;
+    height: calc(100vh - 80px); /* Adjust sidebar height */
+    margin-top: 80px; /* Offset for header */
+    background-color: #212529;
+    transition: all 0.3s ease;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 1000;
+}
+
+/* Hide sidebar on mobile by default */
+#wrapper.toggled #sidebar-wrapper {
+    transform: translateX(-100%); /* Geser sidebar keluar layar di perangkat mobile */
+}
+
+#page-content-wrapper {
+    width: 100%;
+    padding-top: 20px;
+    margin-left: 220px; /* Offset for sidebar */
+}
+
+/* Sidebar items */
+.sidebar-heading {
+    padding: 10px 20px;
+    font-size: 1.2em;
+    color: #dc3545;
+}
+
+.list-group-item {
+    color: #ffffff;
+    background-color: #212529;
+    border: none;
+}
+
+.list-group-item:hover {
+    color: #dc3545;
+    background-color: #343a40;
+}
+
+/* Carousel Styling */
+.carousel-inner img {
+    height: 300px;
+    object-fit: cover;
+}
+
+/* Responsive adjustments for smaller screens */
+@media (max-width: 768px) {
+    /* Sidebar tersembunyi di perangkat mobile */
+    #wrapper.toggled #sidebar-wrapper {
+        transform: translateX(-100%);
+    }
+
+    #sidebar-wrapper {
+        width: 100%;
+        height: auto;
+        margin-top: 0;
+        position: fixed;
+        z-index: 1050;
+    }
+
+    #page-content-wrapper {
+        margin-left: 0;
+        padding-top: 20px;
+    }
+
+    /* Tombol toggle muncul pada layar kecil */
+    #menu-toggle {
+        position: fixed;
+        top: 10px;
+        left: 10px;
+        z-index: 1100;
+    }
+
+    .navbar-collapse {
+        display: flex !important; /* Pastikan menu tetap terbuka */
+    }
+}
